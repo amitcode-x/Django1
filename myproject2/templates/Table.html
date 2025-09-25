@@ -10,7 +10,7 @@
 <body>
 
     <div class="container">
-        <table border="1">
+        <table border="1" cellpadding="25" cellspacing="15" align="center">
 
             <thead align="center">
                 <tr>
@@ -25,27 +25,28 @@
             </thead>
             <tbody align="center">
                 
-                <tr>
+                <tr bgcolor="lightblue">
+                   
                     {%for sp in squares %}
                     <td>{{sp}}</td>
                     {%endfor%}
                 </tr>
-                <tr>
+                <tr bgcolor="yellow">
                     {%for cp in cubes %}
                     <td>{{cp}}</td>
                     {%endfor%}
                 </tr>
-                <tr>
+                <tr bgcolor="lightgreen" >
                     {%for fp in fourths %}
                     <td>{{fp}}</td>
                     {%endfor%}
                 </tr>
-                <tr>
+                <tr bgcolor="orange" >
                     {%for fip in fifths %}
                     <td>{{fip}}</td>
                     {%endfor%}
                 </tr>
-                <tr>
+                <tr bgcolor="pink" >
                     {%for sip in sixths %}
                     <td>{{sip}}</td>
                     {%endfor%}
