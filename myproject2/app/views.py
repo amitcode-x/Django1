@@ -19,3 +19,14 @@ def data(request):
         }
     return render(request, "data.html",data )
 
+def table(request):
+    data = {
+        'numbers': range(1, 7),
+        'squares': [i**2 for i in range(1, 7)],
+        'cubes': [i**3 for i in range(1, 7)],
+        'fourths': [i**4 for i in range(1, 7)],
+        'fifths': [i**5 for i in range(1, 7)],
+        'sixths': [i**6 for i in range(1, 7)],
+    }
+    return render(request, "table.html", data)
+

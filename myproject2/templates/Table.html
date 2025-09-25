@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <div class="container">
+        <table border="1">
+
+            <thead align="center">
+                <tr>
+                    <th>Numbers</th>
+                    <th>Squares</th>
+                    <th>Cubes</th>
+                    <th>Fourth Powers</th>
+                    <th>Fifth Powers</th>
+                    <th>Sixth Powers</th>
+                </tr>
+
+            </thead>
+            <tbody align="center">
+                <tr>
+                    {%for sp in squares %}
+                    <td>{{sp}}</td>
+                    {%endfor%}
+                </tr>
+                <tr>
+                    {%for cp in cubes %}
+                    <td>{{cp}}</td>
+                    {%endfor%}
+                </tr>
+                <tr>
+                    {%for fp in fourths %}
+                    <td>{{fp}}</td>
+                    {%endfor%}
+                </tr>
+                <tr>
+                    {%for fip in fifths %}
+                    <td>{{fip}}</td>
+                    {%endfor%}
+                </tr>
+                <tr>
+                    {%for sip in sixths %}
+                    <td>{{sip}}</td>
+                    {%endfor%}
+                </tr>
+            </tbody>
+
+
+
+
+        </table>
+
+    </div>
+
+</body>
+
+</html>

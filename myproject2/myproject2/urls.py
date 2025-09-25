@@ -24,5 +24,6 @@ urlpatterns = [
     path("",views.Home),
     path("loop/", views.loop),
     path("data/", views.data),
+    path("table/", views.table),
     
 ]
