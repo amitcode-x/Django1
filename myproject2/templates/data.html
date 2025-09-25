@@ -19,7 +19,7 @@
     <div>
         <h1>Data</h1>
         {%for i in data%}
-        <p>This is item {{i}}</p>
+        <p>{{forloop.counter}}. This is item {{i}}</p>
         {%endfor%}
         <h1>{{name}}</h1>
         <h1>{{place}}</h1>
