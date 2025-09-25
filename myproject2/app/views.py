@@ -14,7 +14,8 @@ def data(request):
     data={
         'data':[1,2,3,4,5,6,7,8,9,10],
         'name':"Amit chauhan",
-        'place':"India"
+        'place':"India",
+        'fruits':["mango","banana","orange","grapes"]
         }
     return render(request, "data.html",data )
 
