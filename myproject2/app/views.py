@@ -22,6 +22,7 @@ def data(request):
 def table(request):
     data = {
         'numbers': range(1, 7),
+       
         'squares': [i**2 for i in range(1, 7)],
         'cubes': [i**3 for i in range(1, 7)],
         'fourths': [i**4 for i in range(1, 7)],
