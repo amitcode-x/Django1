@@ -9,24 +9,41 @@
 
 <body>
 
-   <table border="1">
-    <thead>
-        <tr>
-            {% for key in data.student.0.keys %}
+    <table border="1">
+        <thead>
+            <tr>
+                {% for key in student.0.keys %}
                 <th>{{ key|title }}</th>
-            {% endfor %}
-        </tr>
-    </thead>
-    <tbody>
-        {% for d in data.student %}
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for d in student %}
             <tr>
                 <td>{{ d.roll }}</td>
                 <td>{{ d.name }}</td>
                 <td>{{ d.marks }}</td>
             </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    {% if number|length > 0 %}
+
+        {% for n in number %}
+
+             {% if n|divisibleby:2 %}
+
+            <div>{{ n }}</div>
+
+            {% endif %}
+
         {% endfor %}
-    </tbody>
-</table>
+    {% else %}
+
+    no data found
+
+    {% endif %}
 
 
 
@@ -35,4 +52,4 @@
 
 </body>
 
-</html>     
+</html>

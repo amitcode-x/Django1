@@ -34,14 +34,16 @@ def table(request):
 
 def tab(request):
     data = {
+       
+        'number':[1,2,3,4,5,6,7,8,9,10],
         'student' :[
             {'name':"Amit chauhan", 'roll':101, 'marks':85},
             {'name':"Rahul sharma", 'roll':102, 'marks':90},
             {'name':"Ankit singh", 'roll':103, 'marks':78},
             {'name':"Vikas yadav", 'roll':104, 'marks':88},
             {'name':"Rohit kumar", 'roll':105, 'marks':92},
-        ]
+        ],
         
     }
-    return render(request, "tab.html", {"data": data})
+    return render(request, "tab.html", data)
 
