@@ -27,4 +27,4 @@ urlpatterns = [
     path("table/", views.table),
     path("tab/", views.tab),     
 ]         
-                       
+                        
