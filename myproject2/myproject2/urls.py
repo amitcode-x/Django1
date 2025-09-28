@@ -25,5 +25,5 @@ urlpatterns = [
     path("loop/", views.loop),
     path("data/", views.data),
     path("table/", views.table),
-    path("tab/", views.tab),
+    path("tab/", views.tab), 
 ]
