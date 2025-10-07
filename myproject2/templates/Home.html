@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
+
 <body>
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container">
-            <h1>Welcome to Our Landing Page</h1>
-            <p>We create awesome websites for your business.</p>
-            <button id="ctaButton">Get Started</button>
-        </div>
-    </header> 
 
-    <!-- About Section -->
-    <section class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>We specialize in web development and design to help your business grow online.</p>
-        </div>
-    </section>
+    {% include "header.html" %} 
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Your Company. All rights reserved..</p>
-    </footer>
+    <div id="main">
+        <div class="card"></div>
+    </div>
+
+    {% include "footer.html" %} 
+
+
+
+   
 
     <script src="/static/script.js"></script>
 </body>
+
 </html>
