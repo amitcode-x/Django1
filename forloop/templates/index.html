@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>{{title}}</title>
+</head>
+<body>
+    <h1>{{dis}}</h1>
+    <h2>
+        {% for i in fruits %}
+        <div>{{i}}</div>
+        {% endfor %}
+    </h2>
+
+
+
+    <h2>Fruits List</h2>
+<ul>
+{% for fruit in fruits %}
+    {% if forloop.first %}
+        <li><strong>🍏 First fruit: {{ fruit }}</strong></li>
+    {% elif forloop.last %}
+        <li><strong>🍇 Last fruit: {{ fruit }}</strong></li>
+    {% else %}
+        <li>{{ fruit }}</li>
+    {% endif %}
+{% endfor %}
+</ul>
+
+
+<table border="2" cellpadding="10" >
+    <tr>
+       
+
+        <th> name</th>
+        <th>number</th>
+
+       
+    </tr>
+      {% for i in students %}
+    <tr>
+        <td>{{i.name}}</td>
+        <td>{{i.mobile}}</td>
+    </tr>
+      {% endfor %}
+</table>
+    
+</body>
+</html>
