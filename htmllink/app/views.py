@@ -10,7 +10,9 @@ def datapass(request):
     data = {
         
         "title": "data pass",
-        'discription': ' this is datapass concepts'
+        'discription': ' this is datapass concepts',
+        'name' : 'amit chauhan',
+        'age' : 22
     }
     
     return render(request,"index1.html",data)
