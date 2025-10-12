@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>{{title}}</title>
+</head>
+
+<body>
+
+
+
+
+    <h2>Fruits List</h2>
+    <ul>
+        {% for fruit in fruits %}
+        {% if forloop.first %}
+        <li><strong>🍏 First fruit: {{ fruit }}</strong></li>
+        {% elif forloop.last %}
+        <li><strong>🍇 Last fruit: {{ fruit }}</strong></li>
+        {% else %}
+        <li>{{ fruit }}</li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    {% if num|length > 0 %}
+
+    {% for n in numbers%}
+
+    {% if n > 44 %}
+
+
+    <h1>{{n}}</h1>
+
+    {% endif %}
+
+    {% endfor%}
+
+    {% else %}
+
+    <h5>list is empty</h5>
+
+    {% endif %}
+
+
+
+</body>
+
+</html>
