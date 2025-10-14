@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <link rel="stylesheet" href=" {% static 'style.css' %} " />
+  <script src="https://kit.fontawesome.com/a2c123f4c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header / Navbar -->
+ 
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to <span class="gradient-text">MyWebsite</span></h1>
+      <p>Turning ideas into beautiful digital experiences.</p>
+      <button class="btn">Get Started</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      We are a passionate team creating modern, user-friendly and visually stunning web applications.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-box">
+      <div class="card">
+        <i class="fas fa-code service-icon"></i>
+        <h3>Web Development</h3>
+        <p>Modern and responsive websites using the latest technologies.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-pencil-ruler service-icon"></i>
+        <h3>UI/UX Design</h3>
+        <p>Clean, minimal, and user-focused design interfaces.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-chart-line service-icon"></i>
+        <h3>SEO Optimization</h3>
+        <p>Helping your website rank higher on search engines.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+ 
+
+  <script src=" {% static 'script.js' %} "></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #111, #222, #111);
+  padding: 15px 60px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  animation: slideDown 0.8s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #00bcd4, #00ff88);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: #00bcd4;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+  background: linear-gradient(to right, #00bcd4, #00796b);
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: white;
+  color: #00796b;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #111;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* ---------- About ---------- */
+.about {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f4f4f4;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* ---------- Services ---------- */
+.services {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.service-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  width: 300px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: #00bcd4;
+  margin-bottom: 15px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background: #0a0a0a;
+  color: white;
+  padding: 50px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+  text-align: left;
+}
+
+.footer-links a {
+  color: #bbb;
+  display: block;
+  margin: 8px 0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00bcd4;
+}
+
+.footer-social .social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+  color: #00bcd4;
+  transform: scale(1.2);
+}
+
+.footer hr {
+  border: 0;
+  border-top: 1px solid #333;
+  margin: 30px 0;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.3rem;
+  }
+}
