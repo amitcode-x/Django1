@@ -1,16 +1,8 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home Page</title>
-  <link rel="stylesheet" href=" {% static 'style.css' %} " />
-  <script src="https://kit.fontawesome.com/a2c123f4c2.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <!-- Header / Navbar -->
- 
+{% extends 'base.html' %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
 
   <!-- Hero Section -->
   <section class="hero">
@@ -51,9 +43,5 @@
     </div>
   </section>
 
-  <!-- Footer -->
- 
 
-  <script src=" {% static 'script.js' %} "></script>
-</body>
-</html>
+  {% endblock %}
