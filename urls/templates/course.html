@@ -4,10 +4,12 @@
 <head>
     
     <title>{{title}}</title>
-    <link rel="stylesheet" href=" {% static 'style1.css' %} ">
+    <link rel="stylesheet" href=" {% static 'course.css' %} ">
 </head>
 <body>
-    <h1>Radhe Radhe</h1>
+    <h1>course</h1>
+    <a href="/subject">subject</a>
+    <a href=" {% url 'course' %} "> 2nd method subject</a>
     <script src="{% static 'script.js' %}" ></script>
     
 </body>

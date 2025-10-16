@@ -17,7 +17,11 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
+from app import views as view
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-]
+    path('',view.home),
+    path('course/', view.course, name='course'),
+    path('subject/',view.subject)
+] 
