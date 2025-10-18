@@ -25,4 +25,4 @@ urlpatterns = [
     path('course/', view.course, name='course'),
     path('subject/',view.subject)
 ] 
-  
+    
