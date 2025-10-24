@@ -13,19 +13,21 @@ def contact(request):
     return render(request, 'contact.html')
 def Userform(request):
     try:
-        name = request.GET("name")
-        email = request.GET("email")
-        phone = request.GET("phone")
-        msg = request.GET("message")
+        name = request.GET.get("name")
+        email = request.GET.get("email")
+        phone = request.GET.get("phone")
+        msg = request.GET.get("message")
         print(name+ email+ phone+msg)
     except:
         pass
-    
+    # finalans = 0
     # try:
-    #     n1 = request.GET['num1']
-    #     n2 = request.GET['num2']
-    #     print(n1+n2)
+    #     n1 = int(request.GET['num1'])
+    #     n2 = int(request.GET['num2'])
+    #     finalans = n1 + n2
+       
     
     # except:
     #     pass
+    # return render(request, 'Userform.html',{'output':finalans})
     return render(request, 'Userform.html')
