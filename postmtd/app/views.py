@@ -13,6 +13,11 @@ def contact(request):
     return render(request, 'contact.html')
 def Userform(request):
     
+    
+    # <!-- this is for save the data in input section after submit the form -->
+    
+    # data = {}
+    
     result = ""
     try:
         name = request.POST.get("name", "")
@@ -21,6 +26,14 @@ def Userform(request):
         msg = request.POST.get("message", "")
         result = f" name: {name} email: {email} phone: {phone} message: {msg}"
         print( name, email, phone,msg)
+        # <!-- this is for save the data in input section after submit the form -->
+        data = {
+            'name': name,
+            'email': email,
+            'phone': phone,
+            'message': msg,
+                'result': result
+         }
     except:
         pass
     # finalans = 0
@@ -33,4 +46,7 @@ def Userform(request):
     # except:
     #     pass
     # return render(request, 'Userform.html',{'output':finalans})
+    
+    # this is for save the data in input section after submit the form 
+    # return render(request, 'Userform.html',data)
     return render(request, 'Userform.html',{'output':result})
