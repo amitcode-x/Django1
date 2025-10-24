@@ -1,0 +1,54 @@
+
+
+{% extends "Base.html" %}
+
+{% block content %}
+
+
+
+
+
+<div class="form-container">
+
+    <h2>User Registration Form</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+
+         <div class="form-group">
+            <label for="phone">Output</label>
+            <input type="text" id="output" name="output" value="{{ output }}" readonly>
+        </div>
+
+
+    </form>
+    </div>
+
+    <!-- <form action="">
+        <input type="" name="num1" id="">
+        <input type="" name="num2" id="">
+        <button type="submit" > submit</button>
+        <h3> {{ output }} </h3>
+    </form> -->
+
+{% endblock %}
