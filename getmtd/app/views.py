@@ -17,7 +17,7 @@ def Userform(request):
         email = request.GET.get("email")
         phone = request.GET.get("phone")
         msg = request.GET.get("message")
-        print(name+ email+ phone+msg)
+        print(name, email, phone,msg)
     except:
         pass
     # finalans = 0
