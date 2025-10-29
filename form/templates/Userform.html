@@ -53,7 +53,7 @@
     <h2>User Registration Form</h2>
     <form method="POST" action="{% url 'action' %}">
         {% csrf_token %}
-        <div class="form-group">
+        <!-- <div class="form-group">
             <label for="name">Full Name</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
         </div>
@@ -71,7 +71,9 @@
         <div class="form-group">
             <label for="message">Message</label>
             <textarea id="message" name="message" placeholder="Enter your message"></textarea>
-        </div>
+        </div> -->
+
+        {{form}}
 
         <button type="submit" class="submit-btn">Submit</button>
 

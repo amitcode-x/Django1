@@ -2,6 +2,11 @@ from django.shortcuts import render,redirect
 from django.http import HttpRequest, HttpResponse
 
 
+from .forms import UserForm
+
+
+
+
 def home(request):
     return render(request, "home.html")
 
@@ -21,7 +26,7 @@ def Userform(request):
     
     
   
-    
+    fn = UserForm()
     result = ""
     try:
         name = request.POST.get("name", "")
@@ -35,4 +40,4 @@ def Userform(request):
     except:
         pass
    
-    return render(request, 'Userform.html',{'output':result})
+    return render(request, 'Userform.html',{'output':result,'form':fn})
