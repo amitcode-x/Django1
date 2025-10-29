@@ -2,7 +2,7 @@ from django.shortcuts import render,redirect
 from django.http import HttpRequest, HttpResponse
 
 
-from .forms import UserForm
+from .form import UserForm
 
 
 
